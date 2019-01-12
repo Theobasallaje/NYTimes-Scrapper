@@ -2,7 +2,6 @@ var searchTermVal = $("#searchTerm").val();
 var numberofRecordsToRetrieveVal = $("#numberfRecords").val();
 var startYearVal = $("#startYear").val();
 var endYearVal = $("#endYear").val();
-console.log('akuna');
 var url = "https://api.nytimes.com/svc/search/v2/articlesearch.json";
 url += '?' + $.param({
   'api-key': "d05fcb0f8f6947658a9cbb2855f3419b",
@@ -25,7 +24,10 @@ $("#search").on("click", function() {
 
 
 
-// $("#clearResults").on("click", function() {
-//     searchTermVal = "";
-//     numberofRecordsTo
-// 
+$("#clearResults").on("click", function() {
+    searchTermVal = "";
+    numberofRecordsToRetrieveVal = "";
+    startYearVal = "";
+    ndYearVal = "";
+
+});
