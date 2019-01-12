@@ -7,28 +7,53 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Page Title</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
-    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
+        crossorigin="anonymous">
+
 </head>
 
 <body>
 
     <div class="container">
 
-        <div class = "header container">
+        <div class="header container">
 
-                <div class="card">
-                        <div class="card-body">
-                          <div class = "image-container">
+            <div class="card">
+                <div class="card-body">
+                    <div class="image-container">
 
-                            <img src = /Users/Lego/Desktop/NYTimes-Scrapper/assets/images/nyt.png >
+                        <img src= /Users/Lego/Desktop/NYTimes-Scrapper/assets/images/nyt.png>
 
-                          </div>
-                        </div>
-                      </div>
+                    </div>
+                </div>
+            </div>
 
         </div>
 
+        <form>
+            <div class="form-group">
+                <label for="searchTerm">Search Term</label>
+                <textarea class="form-control" id="searchTerm" rows="3"></textarea>
+            </div>
+            <div class="form-group">
+                <label for="exampleFormControlSelect1">Number of records</label>
+                <select class="form-control" id="numberOfRecords">
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                </select>
+            </div>
+            <div class="form-group">
+                    <label for="searchTerm">Start Year</label>
+                    <textarea class="form-control" id="startYear" rows="3"></textarea>
+            </div>
+            <div class="form-group">
+                    <label for="searchTerm">End Year</label>
+                    <textarea class="form-control" id="endYear" rows="3"></textarea>
+            </div>
+        </form>
 
     </div>
 
