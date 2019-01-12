@@ -24,10 +24,8 @@ $("#search").on("click", function() {
 
 
 
-$("#clearResults").on("click", function() {
-    searchTermVal = "";
-    numberofRecordsToRetrieveVal = "";
-    startYearVal = "";
-    ndYearVal = "";
+$("#clearResults").on("click", function(e) {
+    event.preventDefault();
+    document.getElementById("form").reset();
 
 });
