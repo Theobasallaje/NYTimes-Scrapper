@@ -4,16 +4,18 @@ var startYearVal = $("#startYear").val();
 var endYearVal = $("#endYear").val();
 
 function url(searchTermVal, startYearVal, endYearVal){
-    var params = {
-        'api-key': "a31cb31f563a44e69165b720f77054a7",
-        'q': searchTermVal
-    };
-    if(startYear){
+    if(startYearVal){
         params.begin_date = startYearVal + "0101";
     } 
-    if(endYear){
+    if(endYearVal){
         params.end_date = endYearVal + "1231";
     }
+    var params = {
+        'api-key': "a31cb31f563a44e69165b720f77054a7",
+        'q': searchTermVal,
+        'begin_date': startYearVal,
+        'end_date': endYearVal
+    };
     var url = "https://api.nytimes.com/svc/search/v2/articlesearch.json";
     url += '?' + $.param(params);
     console.log(url);
